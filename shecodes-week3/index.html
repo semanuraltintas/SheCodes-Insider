@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheCodes Week 3</title>
+    <style>
+        .button, .secondButton {
+            background-color: blueviolet;
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: orange;
+        }
+        .secondButton:hover {
+            background-color: green;
+        }
+    </style>
+
+    <script>
+        function changeParagraph(newText) {
+            document.getElementById('paragraph').innerHTML = newText;
+        }
+    
+    </script>
+</head>
+<body>
+    <p id="paragraph">Hello World</p>
+    <button class="button"onclick="changeParagraph('Web Technologies')">LEFT</button>
+    <button class="secondButton"onclick="changeParagraph('Hello Javascript World')">RIGHT</button>
+
+</body>
+</html>
+
+<!-- 
+script lines
+            document.getElementById('paragraph').innerHTML = 'Hello Turkey!';
+            document.getElementById('paragraph').style.fontSize = '35px';
+            document.getElementById('paragraph').style.color = 'green';
+
+function changeText() {
+    document.getElementById('paragraph').innerHTML = 'She Codes Javascript Course';
+
+} 
+
+function changeParagraph() {
+            window.alert('Hello Javascript World');
+        }
+
+
+added function to html
+
+onclick="changeText()" 
+
+-->
